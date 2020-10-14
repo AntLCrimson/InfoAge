@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">InfoAge</string>
+
+    //For the tabs
+    <string name="HomeTabString">Home</string>
+    <string name="TeachersTabString">Teachers</string>
+    <string name="StudentsTabString">Students</string>
+    <string name="ForumsTabString">Forums</string>
 </resources>
