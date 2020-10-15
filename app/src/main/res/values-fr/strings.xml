@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">InfoAge</string>
+
+    //For the tabs
+    <string name="HomeTabString">Home</string>
+    <string name="TeachersTabString">Teachers</string>
+    <string name="StudentsTabString">Students</string>
+    <string name="ForumsTabString">Forums</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
