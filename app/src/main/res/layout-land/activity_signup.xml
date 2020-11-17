@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_signin"
     tools:context=".SignupActivity">
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="397dp"
@@ -13,9 +14,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="11dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginBottom="-47dp"
+        android:layout_marginStart="119dp"
+        android:layout_marginEnd="-105dp"
+        android:layout_marginBottom="-35dp"
         android:src="@drawable/signin_1" />
 
     <ImageView

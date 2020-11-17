@@ -1,6 +1,9 @@
 package com.tuition.infoage;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
@@ -9,69 +12,23 @@ import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
-
+    Button signinbtn, signupbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        //Initialize and declare the tab layout, items and pager
-
-        //The tab layout
-        TabLayout tabLayout = findViewById(R.id.tabBar);
-
-        //The tab items
-        TabItem HomeTab = findViewById(R.id.HomeTab);
-        TabItem TeachersTab = findViewById(R.id.TeachersTab);
-        TabItem StudentsTab = findViewById(R.id.StudentsTab);
-        TabItem ForumsTab = findViewById(R.id.ForumsTab);
-
-        //Pager adapter
-        final ViewPager viewPager = findViewById(R.id.ViewPager);
-
-        //Define PagerAdapter
-        PagerAdapter pagerAdapter = new
-                PagerAdapter(getSupportFragmentManager(),
-                tabLayout.getTabCount());
-
-        viewPager.setAdapter(pagerAdapter);
-
-        //Changes tabs view when tab is selected
-        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                viewPager.setCurrentItem(tab.getPosition());
+        signinbtn = (Button)findViewById(R.id.signin);
+        signinbtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent signin_activity = new Intent(getApplicationContext(), SigninActivity.class);
+                startActivity(signin_activity);
             }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
+    });
+        signupbtn = (Button)findViewById(R.id.signup);
+        signupbtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent signup_activity = new Intent(getApplicationContext(), SignupActivity.class);
+                startActivity(signup_activity);
             }
         });
-
-        viewPager.addOnPageChangeListener(new TabLayout.
-                TabLayoutOnPageChangeListener(tabLayout));
-
-        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-
-            }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
-            }
-        });
-    }
-}
+}}
