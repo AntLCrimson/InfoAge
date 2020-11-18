@@ -7,12 +7,6 @@
     <string name="StudentsTabString">Students</string>
     <string name="ForumsTabString">Forums</string>
 
-    //For the Drawers
-    <string name="HomeDrawerString">Home</string>
-    <string name="TeacherDrawerString">Teachers</string>
-    <string name="StudentDrawerString">Students</string>
-    <string name="ForumsDrawerString">Forums</string>
-    <string name="HelpAndSupportDrawerString">Help And Support</string>
 
     <string name="navigation_drawer_open" translatable="false">Open Navigation Drawer</string>
     <string name="navigation_drawer_close" translatable="false">Close Navigation Drawer</string>

@@ -9,7 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SingleCourseActivity"></activity>
+        <activity android:name=".HelpandSupportActivity"></activity>
+        <activity
+            android:name=".ForumActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TeacherActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StudentActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SingleCourseActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".HomeAcitivity"
             android:theme="@style/AppTheme.NoActionBar" />
