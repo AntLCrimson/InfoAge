@@ -10,10 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-=======
         <activity
             android:name=".HelpAndSupportActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".HelpandSupportActivity"></activity>
         <activity
             android:name=".ForumActivity"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -26,7 +27,7 @@
         <activity
             android:name=".SingleCourseActivity"
             android:theme="@style/AppTheme.NoActionBar" />
->>>>>>> 5c53ee42cbbf0f7c0e3844c250ff44cc81424919
+
         <activity
             android:name=".HomeAcitivity"
             android:theme="@style/AppTheme.NoActionBar" />

@@ -16,14 +16,15 @@
     <!--    <string name="navigation_drawer_open">Open navigation drawer</string>-->
     <!--    <string name="navigation_drawer_close">Close navigation drawer</string>-->
 
-=======
+
     //For the Drawers
     <string name="HomeDrawerString">Home</string>
     <string name="TeacherDrawerString">Teachers</string>
     <string name="StudentDrawerString">Students</string>
     <string name="ForumsDrawerString">Forums</string>
     <string name="HelpAndSupportDrawerString">Help And Support</string>
->>>>>>> 5c53ee42cbbf0f7c0e3844c250ff44cc81424919
+
 
     <String name="HelpAndSupport">Thank you for using our app. If you have any questions or suggestions email:</String>
+
 </resources>
