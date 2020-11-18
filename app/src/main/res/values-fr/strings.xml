@@ -8,4 +8,9 @@
     <string name="ForumsTabString">Forums</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="HomeDrawerString">Home</string>
+    <string name="TeacherDrawerString">Teachers</string>
+    <string name="StudentDrawerString">Students</string>
+    <string name="ForumsDrawerString">Forums</string>
+    <string name="HelpAndSupportDrawerString">Help And Support</string>
 </resources>

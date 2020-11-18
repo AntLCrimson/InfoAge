@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".SingleCourseActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="417dp"
+        android:layout_height="248dp"
+        tools:layout_editor_absoluteX="-6dp">
+
+        <VideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </FrameLayout>
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Introduce to Android Programming"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="237dp"
+        android:text="Description: This course includes total 9 lessons:
+1.Android platform and Development Environment
+2. Create/use High level interface screen elements
+3. Create Graphics and Animations
+4. Use Android Data and Storage APIs
+5. Connect to internet resources and perform network
+operations on background threads
+6. Use Location, Maps, and Contextual Awareness APIs
+7. Send/receive broadcasts and SMS messages
+8. Use Android APIs for running background tasks
+9. Deploy Android Applications and discuss the security
+issues
+" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Button" />
+
+</LinearLayout>
