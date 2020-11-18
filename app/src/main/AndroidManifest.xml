@@ -9,17 +9,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+=======
+        <activity
+            android:name=".HelpAndSupportActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ForumActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TeacherActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StudentActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SingleCourseActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+>>>>>>> 5c53ee42cbbf0f7c0e3844c250ff44cc81424919
         <activity
             android:name=".HomeAcitivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            ></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SignupActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SigninActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

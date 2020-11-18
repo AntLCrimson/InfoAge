@@ -5,7 +5,7 @@
     android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeAcitivity"
+    tools:context=".ForumActivity"
     tools:openDrawer="start">
 
     <LinearLayout
@@ -24,18 +24,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/fragment_container">
-            <com.google.android.material.tabs.TabLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:tabTextColor="#fff"
-                app:tabSelectedTextColor="#fff"
-                app:tabIndicatorColor="#fff"
-                android:background="@color/colorPrimary"
-                android:id="@+id/tabLayou"/>
-            <androidx.viewpager.widget.ViewPager
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/view_pager"/>
+
+
         </FrameLayout>
 
     </LinearLayout>

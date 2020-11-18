@@ -16,7 +16,7 @@ public class SigninActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
 
-        signup_intent = (TextView)findViewById(R.id.signup_intent);
+        //signup_intent = (TextView)findViewById(R.id.signup_intent);
         signup_intent.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent signup_activity = new Intent(getApplicationContext(), SignupActivity.class);
@@ -25,7 +25,7 @@ public class SigninActivity extends AppCompatActivity {
         signin_intent = (Button) findViewById(R.id.signup_btn);
         signin_intent.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent signin_activity = new Intent(getApplicationContext(), HomeAcitivity.class);
+                Intent signin_activity = new Intent(getApplicationContext(), SingleCourseActivity.class);
                 startActivity(signin_activity);
             }
         });
