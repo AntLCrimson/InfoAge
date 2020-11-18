@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/homeItem"
-        android:title="@string/HomeDrawerString"
+        android:id="@+id/level"
+        android:title="@string/level"
         />
     <item
-        android:id="@+id/teacherItem"
-        android:title="@string/TeacherDrawerString"
+        android:id="@+id/message"
+        android:title="@string/message"
         />
     <item
-        android:id="@+id/studentItem"
-        android:title="@string/StudentDrawerString"
-        />
-
-    <item
-        android:id="@+id/forumItem"
-        android:title="@string/ForumsDrawerString"
+        android:id="@+id/myStatistics"
+        android:title="@string/myStatistics"
         />
 
     <item
-        android:id="@+id/helpAndSupportItem"
-        android:title="@string/HelpAndSupportDrawerString"
+        android:id="@+id/classes"
+        android:title="@string/classes"
+        />
+
+    <item
+        android:id="@+id/carlendar"
+        android:title="@string/calendar"
+        />
+    <item
+        android:id="@+id/setting"
+        android:title="@string/setting"
         />
 </menu>

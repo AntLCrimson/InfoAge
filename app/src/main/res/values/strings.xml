@@ -21,4 +21,23 @@
     <string name="StudentDrawerString">Students</string>
     <string name="ForumsDrawerString">Forums</string>
     <string name="HelpAndSupportDrawerString">Help And Support</string>
+    <string name="message">Messages</string>
+    <string name="level">Level</string>
+    <string name="classes">Classes</string>
+    <string name="myStatistics">My Statistics</string>
+    <string name="setting">Settings</string>
+    <string name="calendar">Calendar</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="or">Or</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="signin">Sign In</string>
+    <string name="signup">Sign Up</string>
+    <string name="rememberMe">Remember Me</string>
+    <string name="forgot_password">Forget Password?</string>
+    <string name="dont_have_account">Do not have account?</string>
+    <string name="msg1">Stay signed in with your  account to make search easier.</string>
+    <string name="welcomeback">Welcome back!</string>
+
 </resources>

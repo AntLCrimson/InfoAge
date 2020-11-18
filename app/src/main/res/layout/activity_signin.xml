@@ -43,8 +43,8 @@
         android:layout_marginEnd="54dp"
         android:layout_marginBottom="399dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:hint="@string/name"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -55,6 +55,7 @@
         android:layout_marginEnd="51dp"
         android:layout_marginBottom="330dp"
         android:ems="10"
+        android:hint="@string/password"
         android:inputType="textPassword" />
 
     <TextView
@@ -69,7 +70,7 @@
         android:layout_marginTop="109dp"
         android:layout_marginEnd="107dp"
         android:layout_marginBottom="562dp"
-        android:text="Welcome back!"
+        android:text="@string/welcomeback"
         android:textSize="30sp" />
 
     <Button
@@ -83,7 +84,7 @@
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="191dp"
         android:background="@drawable/roundedbutton"
-        android:text="Sign In"
+        android:text="@string/signin"
         android:textColor="#fff" />
 
     <Button
@@ -99,7 +100,7 @@
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="107dp"
         android:background="@drawable/gg"
-        android:text="Google"
+        android:text="@string/google"
         android:textColor="#fff" />
 
     <Button
@@ -116,7 +117,7 @@
         android:layout_marginTop="559dp"
         android:layout_marginEnd="214dp"
         android:layout_marginBottom="108dp"
-        android:text="Facebook" />
+        android:text="@string/facebook" />
 
     <TextView
         android:id="@+id/textView3"
@@ -128,7 +129,7 @@
         android:layout_marginStart="183dp"
         android:layout_marginEnd="170dp"
         android:layout_marginBottom="160dp"
-        android:text="Or" />
+        android:text="@string/or" />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -138,7 +139,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="230dp"
         android:layout_marginBottom="274dp"
-        android:text="Remember me" />
+        android:text="@string/rememberMe" />
 
     <TextView
         android:id="@+id/signup_intent"
@@ -149,7 +150,7 @@
         android:layout_marginEnd="145dp"
         android:textColor="#FF0000"
         android:layout_marginBottom="59dp"
-        android:text="Sign Up" />
+        android:text="@string/signup" />
 
     <TextView
         android:id="@+id/textView7"
@@ -159,7 +160,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="204dp"
         android:layout_marginBottom="58dp"
-        android:text="Don't have account?" />
+        android:text="@string/dont_have_account" />
 
     <TextView
         android:id="@+id/textView6"
@@ -169,7 +170,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="278dp"
-        android:text="Forgot password?" />
+        android:text="@string/forgot_password" />
 
     <TextView
         android:id="@+id/textView5"
@@ -183,6 +184,6 @@
         android:layout_marginTop="160dp"
         android:layout_marginEnd="54dp"
         android:layout_marginBottom="497dp"
-        android:text="Stay signed in with your  account to make search easier."
+        android:text="@string/msg1"
         android:textSize="18sp" />
 </RelativeLayout>

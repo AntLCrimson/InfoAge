@@ -12,6 +12,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
@@ -21,7 +22,7 @@ public class StudentActivity extends AppCompatActivity  implements NavigationVie
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
-
+    ProgressBar progressBar1, progressBar2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +30,10 @@ public class StudentActivity extends AppCompatActivity  implements NavigationVie
         drawerLayout=findViewById(R.id.drawerLayout);
         navigationView=findViewById(R.id.nav_view);
         toolbar=findViewById(R.id.toolbar);
+        progressBar1=findViewById(R.id.progressBar);
+        progressBar2=findViewById(R.id.progressBar2);
+        progressBar1.setProgress(25);
+        progressBar2.setProgress(65);
         navigationView.bringToFront();
         ActionBarDrawerToggle toggle=new
                 ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close);

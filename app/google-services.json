@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "337783709949",
+    "firebase_url": "https://infoage-47548.firebaseio.com",
+    "project_id": "infoage-47548",
+    "storage_bucket": "infoage-47548.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337783709949:android:649d1a4cac035877bc9e94",
+        "android_client_info": {
+          "package_name": "com.tuition.infoage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337783709949-mkr9n387ocluheelgv75trvgvunkqjfu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCW5bYwR9dRZ4wr-uf4f5Abcq0fbYtdf8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "337783709949-mkr9n387ocluheelgv75trvgvunkqjfu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
