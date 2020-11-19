@@ -43,7 +43,7 @@
         app:layout_constraintBottom_toTopOf="@+id/lostConnectionTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/lostConnectionPicture" />
+        app:srcCompat="@drawable/lost_connectiom_picture" />
 
     <ImageButton
         android:id="@+id/lostConnectionCancelImageButton"

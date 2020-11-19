@@ -39,13 +39,18 @@
     <string name="dont_have_account">Do not have account?</string>
     <string name="msg1">Stay signed in with your  account to make search easier.</string>
     <string name="welcomeback">Welcome back!</string>
-
-
-    //Lost Connection
+    <string name="email">Email</string>
+    <string name="retype_password">Retype your password</string>
+    <string name="msg2"></string>
+    <string name="accept">Accept</string>
+    <string name="term_of_service">Term of Service</string>
+    <string name="humber">Humber college</string>
+    <string name="introduce">Introduce to Android Programming</string>
+<!--    //Lost Connection-->
     <string name="lostConnection">Lost Connection</string>
     <string name="lostConnectionBlurb">It seems like you have lost  internet connection</string>
 
-    //Error 404
+<!--    //Error 404-->
     <string name="notFound">Page not Found</string>
     <string name="notFoundBlurb">It seems like the page you are  looking for is no longer.</string>
     <string name="notFound404">404</string>
@@ -58,5 +63,17 @@
     <string name="verifyAccountNext">Next</string>
     <string name="verifyAccountDashHint">-</string>
 
+    <string-array name="addr">
+        <item>humber college</item>
+        <item>humber college</item>
+        <item>humber college</item>
+        <item>humber college</item>
+    </string-array>
+    <string-array name="price">
+        <item>humber college</item>
+        <item>humber college</item>
+        <item>humber college</item>
+        <item>humber college</item>
+    </string-array>
 
 </resources>

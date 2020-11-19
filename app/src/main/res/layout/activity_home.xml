@@ -27,10 +27,10 @@
             <com.google.android.material.tabs.TabLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:tabTextColor="#fff"
-                app:tabSelectedTextColor="#fff"
-                app:tabIndicatorColor="#fff"
-                android:background="@color/colorPrimary"
+                app:tabTextColor="@color/colorPurple"
+                app:tabSelectedTextColor="@color/colorPurple"
+                app:tabIndicatorColor="@color/colorPurple"
+                android:background="@color/colorWhite"
                 android:id="@+id/tabLayou"/>
             <androidx.viewpager.widget.ViewPager
                 android:layout_width="match_parent"

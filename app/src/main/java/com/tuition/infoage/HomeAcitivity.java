@@ -99,7 +99,7 @@ public class HomeAcitivity extends AppCompatActivity  implements NavigationView.
                 startActivity(intent2);
                 break;
             case R.id.helpAndSupportItem:
-                Intent intent3 = new Intent(getApplicationContext(), HelpandSupportActivity.class);
+                Intent intent3 = new Intent(getApplicationContext(), HelpAndSupportActivity.class);
                 startActivity(intent3);
                 break;
         }
