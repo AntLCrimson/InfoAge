@@ -42,6 +42,10 @@
 
 
     //Lost Connection
+    <string name="lostConnection">Lost Connection</string>
+    <string name="lostConnectionBlurb">It seems like you have lost  internet connection</string>
+
+    //Error 404
     <string name="notFound">Page not Found</string>
     <string name="notFoundBlurb">It seems like the page you are  looking for is no longer.</string>
     <string name="notFound404">404</string>
