@@ -33,7 +33,7 @@
     <string name="welcomeback">Welcome back!</string>
 
     //Lost Connection
-    <string name="lostConnection">Page not Found</string>
-    <string name="lostConnectionBlurb">It seems like the page you are  looking for is no longer.</string>
-    <string name="lostConnection404">404</string>
+    <string name="notFound">Page not Found</string>
+    <string name="notFoundBlurb">It seems like the page you are  looking for is no longer.</string>
+    <string name="notFound404">404</string>
 </resources>
