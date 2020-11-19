@@ -10,6 +10,8 @@
 
     <color name="BlackText">#000000</color>
 
-    <color name="errorTextFont">#152238</color>
+    <color name="navyTextFont">#152238</color>
     <color name="notFound404Color">#522e92</color>
+
+    <color name="linkBlue">#0000EE</color>
 </resources>

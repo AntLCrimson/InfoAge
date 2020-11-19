@@ -50,6 +50,13 @@
     <string name="notFoundBlurb">It seems like the page you are  looking for is no longer.</string>
     <string name="notFound404">404</string>
 
+    //Verify Account
+    <string name="verifyAccount">Verify Account</string>
+    <string name="verifyAccountBlurb">Please enter the code  sent to your phone</string>
+    <string name="verifyAccountCode">Didn\'t get the code?</string>
+    <string name="verifyAccountSendCodeAgain">send it again</string>
+    <string name="verifyAccountNext">Next</string>
+    <string name="verifyAccountDashHint">-</string>
 
 
 </resources>
