@@ -35,26 +35,26 @@
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="300dp"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="52dp"
-        android:layout_marginBottom="341dp"
+        android:layout_marginBottom="370dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Email" />
+        android:inputType="textEmailAddress"
+        android:hint="@string/email" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
         android:layout_width="300dp"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="52dp"
-        android:layout_marginBottom="419dp"
+        android:layout_marginBottom="440dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name" />
+        android:hint="@string/name" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -63,9 +63,10 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="52dp"
-        android:layout_marginBottom="262dp"
+        android:layout_marginBottom="300dp"
         android:ems="10"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:hint="@string/password"/>
 
     <EditText
         android:id="@+id/editTextTextPassword2"
@@ -74,9 +75,10 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="52dp"
-        android:layout_marginBottom="175dp"
+        android:layout_marginBottom="220dp"
         android:ems="10"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:hint="@string/retype_password"/>
 
     <TextView
         android:id="@+id/textView"
@@ -104,7 +106,7 @@
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="55dp"
         android:background="@drawable/roundedbutton"
-        android:text="Sign Up"
+        android:text="@string/signup"
         android:textColor="#fff" />
 
     <CheckBox
@@ -114,8 +116,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="272dp"
-        android:layout_marginBottom="125dp"
-        android:text="Accept" />
+        android:layout_marginBottom="180dp"
+        android:text="@string/accept" />
 
     <TextView
         android:id="@+id/textView5"
@@ -129,7 +131,7 @@
         android:layout_marginTop="160dp"
         android:layout_marginEnd="54dp"
         android:layout_marginBottom="497dp"
-        android:text="Create your own account and find more beautiful\"
+        android:text="@string/msg2"
         android:textSize="18sp" />
 
     <TextView
@@ -139,8 +141,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="157dp"
-        android:layout_marginBottom="132dp"
-        android:text="Terms of service" />
+        android:layout_marginBottom="185dp"
+        android:text="@string/term_of_service" />
 
 
 </RelativeLayout>

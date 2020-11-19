@@ -10,6 +10,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.ProgressBar;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -17,11 +18,11 @@ public class TeacherActivity extends AppCompatActivity  implements NavigationVie
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
-
+    ProgressBar pg1,pg2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_student);
+        setContentView(R.layout.activity_teacher);
         drawerLayout = findViewById(R.id.drawerLayout);
         navigationView = findViewById(R.id.nav_view);
         toolbar = findViewById(R.id.toolbar);
@@ -32,6 +33,10 @@ public class TeacherActivity extends AppCompatActivity  implements NavigationVie
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
         navigationView.setCheckedItem(R.id.homeItem);
+        pg1=findViewById(R.id.progressBar);
+        pg2=findViewById(R.id.progressBar2);
+        pg1.setProgress(40);
+        pg2.setProgress(90);
     }
 
     @Override
@@ -46,22 +51,26 @@ public class TeacherActivity extends AppCompatActivity  implements NavigationVie
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()) {
-            case R.id.homeItem:
-                break;
-            case R.id.teacherItem:
-                Intent intent = new Intent(getApplicationContext(), TeacherActivity.class);
+            case R.id.level: break;
+            case R.id.message:
+                Intent intent = new Intent(getApplicationContext(), MessageActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.studentItem:
-                Intent intent1 = new Intent(getApplicationContext(), StudentActivity.class);
-                startActivity(intent1);
+            case R.id.myStatistics:
                 break;
-            case R.id.forumItem:
-                Intent intent2 = new Intent(getApplicationContext(), ForumActivity.class);
+            case R.id.setting:
+                Intent intent2 = new Intent(getApplicationContext(), SettingActivity.class);
                 startActivity(intent2);
                 break;
+            case R.id.classes:
+                Intent intent3 = new Intent(getApplicationContext(), ClassesActivity.class);
+                startActivity(intent3);
+                break;
+            case R.id.carlendar:
+                Intent intent4 = new Intent(getApplicationContext(), CalendarActivity.class);
+                startActivity(intent4);
+                break;
         }
-        drawerLayout.closeDrawer(GravityCompat.START);
-        return true;
+        drawerLayout.closeDrawer(GravityCompat.START); return true;
     }
 }
