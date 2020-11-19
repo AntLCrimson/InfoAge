@@ -8,4 +8,10 @@
 
     //Background color
     <color name="BackgroundColorLightGrey">#D4D4D4</color>
+    <color name="BackgroundColorWhite">#FFFFFF</color>
+
+    <color name="BlackText">#000000</color>
+
+    <color name="errorTextFont">#152238</color>
+    <color name="notFound404Color">#522e92</color>
 </resources>

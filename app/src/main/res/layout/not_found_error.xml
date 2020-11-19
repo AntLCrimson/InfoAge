@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/notFoundTextView"
+        android:layout_width="215dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="459dp"
+        android:layout_marginEnd="91dp"
+        android:text="@string/notFound"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/errorTextFont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/notFoundTextViewBlurb"
+        android:layout_width="216dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="91dp"
+        android:text="@string/notFoundBlurb"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notFoundTextView" />
+
+    <TextView
+        android:id="@+id/notFoundTextView404"
+        android:layout_width="116dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="148dp"
+        android:text="@string/notFound404"
+        android:textAlignment="center"
+        android:textColor="@color/notFound404Color"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/notFoundImageView"
+        android:layout_width="319dp"
+        android:layout_height="290dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="46dp"
+        app:layout_constraintBottom_toTopOf="@+id/notFoundTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/lostConnectionPicture" />
+
+    <ImageButton
+        android:id="@+id/notFoundCancelImageButton"
+        android:layout_width="40dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="325dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="46dp"
+        android:background="@color/BackgroundColorWhite"
+        android:foregroundTint="#000000"
+        android:tint="@color/BlackText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
