@@ -7,9 +7,14 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class SigninActivity extends AppCompatActivity {
@@ -55,10 +60,25 @@ public class SigninActivity extends AppCompatActivity {
 
                 else if(!password.isEmpty() && !name.isEmpty()){
 
-                    
+
                 }
 
-
+               /* MFBA.createUserWithEmailAndPassword(email,password).addOnCompleteListener(SignupActivity.this,
+                        new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                if(!task.isSuccessful()){
+                                    Toast.makeText(SignupActivity.this, "Sign up unsuccessful, try again", Toast.LENGTH_LONG).show();
+                                }
+                                else{
+                                    startActivity(new Intent(SignupActivity.this, MainActivity.class));
+                                }
+                            }
+                        }
+                );}
+                else{
+                Toast.makeText(SignupActivity.this, "An Error Occurred", Toast.LENGTH_LONG).show();
+            }*/
 
 
 
