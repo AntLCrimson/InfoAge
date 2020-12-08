@@ -35,7 +35,7 @@
         android:src="@drawable/logo" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editTextTextPersonNameSignIn"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_alignParentEnd="true"
@@ -47,7 +47,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/editTextTextPasswordSignIn"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"

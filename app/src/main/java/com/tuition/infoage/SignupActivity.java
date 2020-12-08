@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -18,6 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class SignupActivity extends AppCompatActivity {
     Button signup_intent;
+    CheckBox acceptBtn;
     String name, email, password, reTypePs;
     EditText nameInput, emailInput, passwordInput, passwordInputReType;
     FirebaseAuth MFBA;
@@ -33,12 +35,13 @@ public class SignupActivity extends AppCompatActivity {
         emailInput = findViewById(R.id.editTextTextPersonEmail);
         passwordInput = findViewById(R.id.editTextTextPassword);
         passwordInputReType = findViewById(R.id.editTextTextPassword2);
+        acceptBtn = findViewById(R.id.checkBoxSignUp);
 
         signup_intent = (Button) findViewById(R.id.signup_btn);
         signup_intent.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent signup_activity = new Intent(getApplicationContext(), HomeAcitivity.class);
-                startActivity(signup_activity);
+                //Intent signup_activity = new Intent(getApplicationContext(), HomeAcitivity.class);
+                //startActivity(signup_activity);
 
 
 
@@ -73,7 +76,12 @@ public class SignupActivity extends AppCompatActivity {
                     passwordInput.requestFocus();
                 }
 
-                else if(!(email.isEmpty() && password.isEmpty()) && (name.isEmpty() && reTypePs.isEmpty())){
+                else if(!acceptBtn.isChecked()){
+                    acceptBtn.setError("Terms and conditions aren't agreed");
+                    acceptBtn.requestFocus();
+                }
+
+                else if(!(email.isEmpty() && password.isEmpty()) && (name.isEmpty() && reTypePs.isEmpty() && (!acceptBtn.isChecked()))){
                 MFBA.createUserWithEmailAndPassword(email,password).addOnCompleteListener(SignupActivity.this,
                         new OnCompleteListener<AuthResult>() {
                             @Override
