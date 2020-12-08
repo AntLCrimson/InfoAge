@@ -9,7 +9,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -71,19 +73,27 @@ public class SignupActivity extends AppCompatActivity {
                     passwordInput.requestFocus();
                 }
 
-                //Make combos of fields empty
-
-               /* MFBA.createUserWithEmailAndPassword(email,password).addOnCompleteListener(SignupActivity.this,
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task){
-
+                else if(!(email.isEmpty() && password.isEmpty()) && (name.isEmpty() && reTypePs.isEmpty())){
+                MFBA.createUserWithEmailAndPassword(email,password).addOnCompleteListener(SignupActivity.this,
+                        new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                if(!task.isSuccessful()){
+                                    Toast.makeText(SignupActivity.this, "Sign up unsuccessful, try again", Toast.LENGTH_LONG).show();
+                                }
+                                else{
+                                    startActivity(new Intent(SignupActivity.this, MainActivity.class));
+                                }
+                            }
+                        }
+                );}
+                else{
+                    Toast.makeText(SignupActivity.this, "An Error Occurred", Toast.LENGTH_LONG).show();
                 }
 
-                )*/
+            }
 
-
-
-            }});
+        });
 
     }
 }
